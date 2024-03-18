@@ -1,9 +1,8 @@
 import { QuestionCircleOutlined } from '@ant-design/icons';
-import { SelectLang as UmiSelectLang } from '@umijs/max';
-import React from 'react';
+import UmiSelectLang from 'umi-select-lang'; // 假设是这样导入的，确保路径和实际情况匹配
 
+import '@umijs/max';
 export type SiderTheme = 'light' | 'dark';
-
 export const SelectLang = () => {
   return (
     <UmiSelectLang
@@ -13,7 +12,6 @@ export const SelectLang = () => {
     />
   );
 };
-
 export const Question = () => {
   return (
     <div
